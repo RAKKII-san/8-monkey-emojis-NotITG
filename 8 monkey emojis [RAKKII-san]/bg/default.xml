@@ -1,0 +1,30 @@
+<ActorFrame><children>
+	<Layer File="background0"
+		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;ZoomToWidth,SCREEN_WIDTH;ZoomToHeight,SCREEN_HEIGHT;"
+	/>
+	<Layer File="bgmovie"
+		OnCommand="%function(self)
+			bg_bg1 = self;
+			self:diffusealpha(0);
+			self:xy(SCREEN_CENTER_X, SCREEN_CENTER_Y);
+			self:zoom(1);
+		end"
+	/>
+	<Layer File="background2"
+		OnCommand="%function(self)
+			bg_bg2 = self;
+			self:diffusealpha(0);
+			self:xy(SCREEN_CENTER_X, SCREEN_CENTER_Y);
+			self:zoom(1);
+		end"
+	/>
+	<Layer File="star"
+		OnCommand="%function(self)
+			bg_star = self;
+			self:diffusealpha(0);
+			self:xy(SCREEN_CENTER_X, SCREEN_CENTER_Y);
+			self:rotationz(-30);
+			self:zoom(2);
+		end"
+	/>
+</children> </ActorFrame>
